@@ -34,11 +34,13 @@ public class AnimationControler : MonoBehaviour
     public void MistDustEmergence()
     {
         MisteriusDust.SetActive(true);
-        StartCoroutine(WaitSomeSeconds(2));
+    }
 
+    public void MistDustDiffusion()
+    {
         CanDustDiffusion = true;
         Rigidbody DustBody = MisteriusDust.GetComponent<Rigidbody>();
-        DustBody.AddForce(Vector3.up*500, ForceMode.Acceleration);
+        DustBody.AddForce(Vector3.up * 500, ForceMode.Acceleration);
     }
 
     public void DestroyMistDust()
@@ -46,9 +48,5 @@ public class AnimationControler : MonoBehaviour
         Destroy(MisteriusDust);
     }
 
-    private IEnumerator WaitSomeSeconds(float count)
-    {
-        yield return new WaitForSeconds(count);
-    }
     
 }
