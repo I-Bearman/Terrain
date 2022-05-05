@@ -20466,9 +20466,9 @@ MonoBehaviour:
     roll: 0
   - position: {x: 5.6353025, y: 0.6630707, z: 6.20063}
     roll: 0
-  - position: {x: 10.441181, y: 0, z: -8.273579}
+  - position: {x: 15.698349, y: 0, z: -17.77811}
     roll: 0
-  - position: {x: 18.704805, y: 3.0036402, z: 9.240196}
+  - position: {x: 18.895401, y: 3.0036402, z: 8.280617}
     roll: 0
   - position: {x: 27.453697, y: 0.78719044, z: -12.104069}
     roll: 0
@@ -25924,7 +25924,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 732440616}
-  m_LocalRotation: {x: -0.007559692, y: -0.5976022, z: -0.005634874, w: 0.80173737}
+  m_LocalRotation: {x: -0.007559684, y: -0.5976022, z: -0.005634868, w: 0.80173737}
   m_LocalPosition: {x: 21.726364, y: 2.6351228, z: -4.064705}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -87515,7 +87515,6 @@ GameObject:
   - component: {fileID: 1493822840}
   - component: {fileID: 1493822839}
   - component: {fileID: 1493822841}
-  - component: {fileID: 1493822842}
   m_Layer: 0
   m_Name: PrologCM vcam9
   m_TagString: Untagged
@@ -87595,36 +87594,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
---- !u!114 &1493822842
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1493822838}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: e501d18bb52cf8c40b1853ca4904654f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_CollideAgainst:
-    serializedVersion: 2
-    m_Bits: 1
-  m_IgnoreTag: 
-  m_TransparentLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_MinimumDistanceFromTarget: 0.1
-  m_AvoidObstacles: 1
-  m_DistanceLimit: 0
-  m_MinimumOcclusionTime: 0
-  m_CameraRadius: 0.1
-  m_Strategy: 1
-  m_MaximumEffort: 4
-  m_SmoothingTime: 0
-  m_Damping: 0
-  m_DampingWhenOccluded: 0
-  m_OptimalTargetDistance: 0
 --- !u!4 &1500023020 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 400000, guid: 1f7aa4d40edff6e48b549003cad031e1,
@@ -92726,7 +92695,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1654031251}
-  m_LocalRotation: {x: -0.0898698, y: 0.24647278, z: 0.022960968, w: 0.9647007}
+  m_LocalRotation: {x: -0.08986981, y: 0.24647275, z: 0.022960963, w: 0.9647007}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -107381,6 +107350,65 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!1 &1859891368
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1859891370}
+  - component: {fileID: 1859891369}
+  - component: {fileID: 1859891371}
+  m_Layer: 0
+  m_Name: CinemachineCutsceneTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!65 &1859891369
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859891368}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!4 &1859891370
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859891368}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 51.52, y: 5.05, z: 65.392}
+  m_LocalScale: {x: 7.7028584, y: 2.0213072, z: 13.111564}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 12
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1859891371
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859891368}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee2f01212cc013442b8f9c27ed4cc8f7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mainHeroCollider: {fileID: 1285121066}
+  timeLine: {fileID: 702390285}
 --- !u!1 &1861874887
 GameObject:
   m_ObjectHideFlags: 0
