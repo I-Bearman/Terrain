@@ -23,11 +23,10 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             if (other == mainHeroCollider)
             {
-                heroInput.enabled = false;
                 mainHeroRigitB.isKinematic = true;
-                mainHeroRigitB.velocity = Vector3.zero;
+                heroInput.enabled = false;
+                mainHero.GetComponent<Animator>().SetFloat("Forward", 0);
                 timeLine.Play();
-                Destroy(gameObject);
             }
         }
 
@@ -35,6 +34,11 @@ namespace UnityStandardAssets.Characters.ThirdPerson
         {
             heroInput.enabled = true;
             mainHeroRigitB.isKinematic = false;
+        }
+
+        public void DeleteCutsceneTrigger()
+        {
+            Destroy(gameObject);
         }
     }
 }
